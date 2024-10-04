@@ -1,0 +1,13 @@
+<h1>Students per Year by trainings</h1>
+<mat-form-field>
+  <mat-label>Choose an option</mat-label>
+  <mat-select (selectionChange)="onYearChange()" [(ngModel)]="ChoosenYear">
+    <mat-option *ngFor="let year of years" [value]="year" >
+      {{ year }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="grades-per-training">
+  <canvas id="canvas"></canvas>
+</div>

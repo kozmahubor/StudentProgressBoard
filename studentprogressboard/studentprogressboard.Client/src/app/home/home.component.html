@@ -1,0 +1,105 @@
+<div class="container-wrapper">
+  <div class="studentContainer" *ngIf="!isAdmin()" >
+    <h1>Student Progress Board</h1>
+    <p>Welcome, dear student! Welcome to our school system! Here you will find important information and tools for your studies.</p>
+    <div class="links">
+      <a href="/courses">Courses</a>
+    </div>
+    <p>Important news and events: Here you'll find the latest information about upcoming events, deadlines, or other important notices.</p>
+    <p>Contact: If you have any questions or issues, feel free to contact us using the information below.</p>
+    <div class="links">
+      <a href="https://github.com/siposm">Contact me</a>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="isAdmin()" class="container">
+  <div class="home-title">
+    <h1 align="center">HOME</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="block" routerLink="/students">
+        <div class="text-center">
+          <h2>Students</h2>
+        </div>
+        <div class="description">
+          <p class="text-center">Click here to view students</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="block" routerLink="/courses">
+        <div class="text-center">
+          <h2>All Courses</h2>
+        </div>
+        <div class="description">
+          <p class="text-center">Click here to view all courses</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="block" routerLink="/trainings">
+        <div class="text-center">
+          <h2>Trainings</h2>
+        </div>
+        <div class="description">
+          <p class="text-center">Click here to view trainings</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row tiles-2x2">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block" routerLink="/Student-statistics">
+            <div class="text-center">
+              <h2>Student Statistics</h2>
+            </div>
+            <div class="description">
+              <p class="text-center">Click here to view student statistics</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="block" routerLink="/Course-statistics">
+            <div class="text-center">
+              <h2>Course Statistics</h2>
+            </div>
+            <div class="description">
+              <p class="text-center">Click here to view course statistics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block" routerLink="/Training-statistics">
+            <div class="text-center">
+              <h2>Training Statistics</h2>
+            </div>
+            <div class="description">
+              <p class="text-center">Click here to view training statistics</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="block" routerLink="/Teacher-statistics">
+            <div class="text-center">
+              <h2>Teacher Statistics</h2>
+            </div>
+            <div class="description">
+              <p class="text-center">Click here to view teacher statistics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

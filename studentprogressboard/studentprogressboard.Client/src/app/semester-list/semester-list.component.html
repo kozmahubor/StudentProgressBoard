@@ -1,0 +1,48 @@
+<h1>{{studentName}}</h1>
+
+<button mat-flat-button class="add-button" color="primary" [routerLink]="['/semester-edit',  studentId ]">Add Semester</button>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="semesterYear">
+      <th mat-header-cell *matHeaderCellDef>Semester Year</th>
+      <td mat-cell *matCellDef="let element"> {{element.semesterYearString}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="active">
+      <th mat-header-cell *matHeaderCellDef>Active</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox [(ngModel)]="element.active" [disabled]="true"></mat-checkbox>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="financialStatus">
+      <th mat-header-cell *matHeaderCellDef> Financial status </th>
+      <td mat-cell *matCellDef="let element"> {{getFinancialStatus(element.financialStatus)}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="update">
+      <th mat-header-cell *matHeaderCellDef> Update </th>
+      <td mat-cell *matCellDef="let element" >
+        <button mat-mini-fab color="warn" [routerLink]="['/semester-edit', element.studentId,  element.id]">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef> Delete </th>
+      <td mat-cell *matCellDef="let element" >
+        <button mat-mini-fab (click)="null">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/student-courses', row.id]"></tr>
+</table>

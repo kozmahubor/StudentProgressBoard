@@ -1,0 +1,37 @@
+<h1>Edit student's course</h1>
+<h3>{{courseName}}</h3>
+<div class="container">
+    <mat-form-field appearance="outline">
+      <mat-label>Course</mat-label>
+      <mat-select [(ngModel)]="studentCourse.courseId">
+        <mat-option *ngFor="let item of courses" [value]="item.id">
+          {{item.name}}
+        </mat-option>
+      </mat-select>
+      <mat-hint>Course</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Grade</mat-label>
+        <input matInput [(ngModel)]="studentCourse.grade" type="number" pattern="[0-9]*">
+        <mat-hint>grade (1-5)</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Course status</mat-label>
+        <mat-select [(ngModel)]="studentCourse.courseStatus">
+          <mat-option *ngFor="let status of CourseStatuses" [value]="status.id">
+            {{status.name}}
+          </mat-option>
+        </mat-select>
+        <mat-hint>Course status</mat-hint>
+    </mat-form-field>
+
+    <button
+        mat-flat-button
+        color="primary"
+        (click)="onSubmit()"
+    >    
+    <mat-icon>cloud_upload</mat-icon>Submit
+    </button>
+</div>

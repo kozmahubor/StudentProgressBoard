@@ -1,0 +1,14 @@
+<h1 align="center">Exam/Midterm distribution</h1>
+<div class="container">
+  <mat-form-field>
+    <mat-label>Choose an option</mat-label>
+    <mat-select (selectionChange)="onSelectionChange($event)">
+      <mat-option *ngFor="let option of uniqueSemesters" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="grades-per-training">
+  <canvas id="canvas"></canvas>
+</div>

@@ -1,0 +1,61 @@
+@media (max-width: 370px) {
+  nav {
+    width: 110%;
+  }
+  img {
+    margin: auto;
+  }
+  #login,
+  #register,
+  #logout {
+    width: 8em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+body {
+  fill: #1a1a1a;
+}
+nav {
+  z-index: 50;
+  position: relative;
+  background: linear-gradient(90.26deg, #101010 28.57%, #9e6800 93.95%);
+  height: 4rem;
+}
+
+nav img {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+  height: 70%;
+  top: 10%;
+  opacity: 0.8;
+}
+
+nav img:hover {
+  opacity: 1;
+}
+
+nav ul {
+  opacity: 0.7;
+}
+nav ul li a {
+  color: rgb(255, 0, 0);
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 2em;
+}
+
+nav .active {
+  color: rgb(73, 244, 73);
+}
+#button {
+  margin-bottom: 2em;
+}

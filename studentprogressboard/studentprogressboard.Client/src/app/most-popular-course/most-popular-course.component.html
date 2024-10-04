@@ -1,0 +1,10 @@
+<div class="grades-per-training">
+  <h1>Most Popular Course</h1>
+  <canvas id="canvas"></canvas>
+</div>
+<br>
+
+<div *ngIf="remainingCoursesHTML">
+  <h3>Remaining Courses</h3>
+  <ul [innerHTML]="remainingCoursesHTML"></ul>
+</div>

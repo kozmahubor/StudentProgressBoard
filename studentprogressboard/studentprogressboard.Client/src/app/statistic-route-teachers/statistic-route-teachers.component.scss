@@ -1,0 +1,16 @@
+.block {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  border: 2px solid #ccc;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}

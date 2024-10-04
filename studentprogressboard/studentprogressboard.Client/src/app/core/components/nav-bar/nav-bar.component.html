@@ -1,0 +1,20 @@
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <nav class="bg-gray-50 dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+    <div class="flex flex-wrap items-center justify-between h-24 p-4">
+      <a class="flex items-center">
+        <img
+          class="h-60 relative inline-block mx-4 cursor-pointer"
+          src="assets/images/spb.png"
+          (click)="router.navigate([''])"
+        />
+      </a>
+      <div
+        class="lg:block lg:w-auto hidden w-full"
+        [class.hidden]="menuVariable"
+        id="navbar-solid-bg"
+      >
+      </div>
+    </div>
+  </nav>
+</header>

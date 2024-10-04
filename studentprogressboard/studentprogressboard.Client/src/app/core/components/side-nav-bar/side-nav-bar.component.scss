@@ -1,0 +1,31 @@
+mat-sidenav {
+  background-color: #adadad;
+  width: 16em;
+}
+mat-sidenav-content {
+  background-color: hsla(0, 0%, 79%, 0.95);
+}
+.navbar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-list li {
+  display: block;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  color: #ccc; /* Lighter color for dark background */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+.dropdown-toggle {
+  cursor: pointer;
+}

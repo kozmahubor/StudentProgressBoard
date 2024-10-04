@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgba(225, 225, 225, 0.12)
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.background-home {
+  background-image: url('./assets/images/bg/items.jpg');
+}
+
+.background-login {
+  background-image: url('./assets/images/bg/login2.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.background-statistics {
+  background-image: url('./assets/images/bg/statistics.jpg');
+  background-color: rgb(119 196 217 / 19%);
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.backgroundColor {
+  background-color: rgb(146 224 245 / 24%);
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.background-students {
+  background-image: url('./assets/images/bg/woman_coding.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.background-courses {
+  background-image: url('./assets/images/bg/man-coding.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.background-trainings {
+  background-image: url('./assets/images/bg/statistics.jpg');
+  background-color: rgb(119 196 217 / 19%);
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.background-semesters {
+  background-image: url('./assets/images/bg/man-coding.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: 34%;
+}
+
+.background-student-statistics {
+  background-image: url('./assets/images/bg/student-statistics.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.background-error {
+  background-image: url('./assets/images/bg/error.jpg');
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
